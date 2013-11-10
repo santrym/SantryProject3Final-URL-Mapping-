@@ -31,10 +31,6 @@ public:
 
   	BreadthFirstTreeMaker();
 
-  	//bool not_url_char(char c);
-
-  	//string::const_iterator 
-  	//string::const_iterator url_end(string::const_iterator b, string::const_iterator e);
 
   	//string::const_iterator 
   	string::const_iterator url_beg(string::const_iterator b, string::const_iterator e);

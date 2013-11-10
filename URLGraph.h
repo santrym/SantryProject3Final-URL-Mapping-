@@ -25,9 +25,7 @@ private:
 	//holds the color of the URL. Used for the Breadth-First-Search.
 	map<string, string> colorMap;
 
-	// Queue to be used in Breadth-First-Search.
-	//vector<string> queue;
-
+	//
 	map<string, vector<string> > BreadthFirstSearchMap;
 
 	//holds the level on which the URLs were found.

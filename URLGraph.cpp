@@ -71,23 +71,9 @@ int URLGraph::BreadthFirstSearch(string parentURL, int dep)
 	// Retrieves the children/neighbors of the currentURL and stores them in a vector "children".
 	vector<string> children = childFinder.BreadthFirstTreeMaker2(currentURL);
 	
-//TODO	// stores the parent's depth.
+	// stores the parent's depth.
 	int parentDepth = depthMap.find(currentURL)->second;
 	
-	
-/**	BACKUP
-	// Add the children to the depthMap so their depth is one greater than their parent's depth.
-	for(std::vector<string>::iterator it = children.begin(); it != children.end(); ++it){
-		//checks if children are already in depthMap. If they are do nothing, if not add it, with depth equal
-		//to their parents depth + 1.
-		if(std::find(depthMap.begin(), depthMap.end(), children[it]) != depthMap.end()) {
-   				 //nothing
-			} else {
-    			// add child to map and set it's depth.
-    			depthMap.insert( std::pair<string,int> (children[it], parentDepth + 1));
-			}
-	}
-**/
 
 	// Add the children to the depthMap so their depth is one greater than their parent's depth.                 
     for(std::vector<string>::iterator it = children.begin(); it != children.end(); ++it){
@@ -119,23 +105,7 @@ int URLGraph::BreadthFirstSearch(string parentURL, int dep)
     }
 
     //For when the adjChildren vector is filled, it is added as the parentURL's children in the adjMap.
-    adjMap.insert( std::pair<string,string> (parentURL, adjChildren));
-
-/**
-	
-	//Iterate through parentURL's children adding them to the colorMap and queue, if they
-	// have't been added yet. 
-	for(std::vector<string>::iterator it = children.begin(); it != children.end(); ++it) {
-    	//checks if URL in children is in the color map, and if not it is added.
-    	if(std::find(colorMap.begin(), colorMap.end(), children[it]) != colorMap.end()) {
-   			 //nothing
-		} else {
-    		// if children not in color map, add it and color it yellow. Then add it to the queue.
-    		colorMap.insert( std::pair<string,string> (children[it], "yellow"));
-    		queue.push(children[it]);
-		}
-	}
-**/		
+    adjMap.insert( std::pair<string,string> (parentURL, adjChildren));	
 
 	
 	//Test the depth. If too deep it will end the process established in the URLGraph method.
