@@ -14,6 +14,20 @@
 
 using namespace std;
 
+/**
+*
+*	URLGraph
+*
+*	Mike Santry
+*	11/10/2013
+*
+*	This class is Used to create a basic mapping of URLs found within other URL's HTTP files starting from one parent URL. This code should
+*	make it possible to see the connections between URLs and the distances, or number of links between each page is.
+*
+*
+**/
+
+
 class URLGraph
 {
 

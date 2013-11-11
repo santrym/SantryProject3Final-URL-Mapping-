@@ -10,6 +10,20 @@
 
 using namespace std;
 
+/**
+*
+*	BreadthFirstTreeMaker
+*
+*	Mike Santry
+*	11/10/2013
+*
+*	This class is intended for finding the URLs within a given URL's HTTP file and adding these URLs to a
+*	vector so they may be used later on.
+*
+*
+**/
+
+
 
 bool not_url_char(char c)
 {

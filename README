@@ -1,0 +1,18 @@
+Code Explaination
+
+Mike Santry
+
+
+For this code there is essentially three main classes used, and they are the BreadthFirstTreeMaker class, the SimpleCurl class, 
+and the URLGraph. These three classes work together to create a print out that tells the user, for a given URL, what URL links can be found within the page, and what URL links can be found from those links.
+
+
+The code uses the SimpleCurl class to retrieve a string of the actual HTTP document. It then uses the BreadthFirstSearch class to use the HTTP document and search through it and retrieve the URL links found within it. Then the URLGraph class to essentially list and map out the links
+so that after so many levels of links have been checked in the end we will have a map of URLs that show the links that the URLs, to a certain depth, have on their page that haven't been found on previous URL's in the map. Essentiall showing a basic map of connections between URLs.
+
+The main way to use this program is through the main function found within the BreadthFirstTreeMaker class. This function creates the first
+BreadthFirstTreeMaker object and from there functions are called from the three main classes (SimpleCurl, URLGraph, and BreadthFirstTreeMaker) to
+perform the tasks laid out in the assignment.
+
+
+

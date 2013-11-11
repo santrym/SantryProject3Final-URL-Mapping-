@@ -1,0 +1,19 @@
+Testing code
+
+Mike Santry
+
+To test my code, I essentially worked through my code level by level and after each major change or addition of code,
+I would try to compile it in the command prompt searching for errors. I would ammend the errors that came up, or
+if I was unable to ammend the errors, I would seek help from the professor.
+
+For the D-level code, to test it, I would add in a "cout" function that would print out the elements in the childrenListOFURL. If 
+the code had done what it was intended to do it would print out the list of URL's found within the parent URL. After much trial,
+I was able to get the list to print out properly. Once this worked, I was able to know for sure that the childrenListOfURL was
+filling properly and I could remove the cout function from the code.
+
+For the C-level code, I would use a similar method as for part-D. I would test the code after any major changes or additions to the code
+and if error messages appeared I would address them as they came. However, for testing if the code had properly added elements
+to the lists/maps the code was intended to add to, I encountered a series of issues. One of which being that my code when attempted
+to compile would create a rather unpleasent stream of errors and trials that would take several minutes to print out. The problem in the end 
+was partially due to my lack of ifndef and define inclusions. But even after this was fixed, I was unable to get past some of the bugs
+I was encountering, so I paid closer attention to the code itself, and looked for changes that could be made to ensure once these bugs were overcome I would know that my issues would be less syntactic. 
